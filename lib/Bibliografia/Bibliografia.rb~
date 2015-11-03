@@ -14,4 +14,4 @@ module Bibliografia
 	    @isbn = i
 	    @referencia = r
 	  end
-
+end
