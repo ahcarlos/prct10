@@ -30,7 +30,13 @@ describe Bibliografia do
         it "Se almacena la serie" do
             expect(l1.GetSerie).to eq(23232)
         end
-            
+        
+        it "Se almacena la fecha de publicación" do
+            expect(l1.GetFecha_publicacion).to eq(2015)
+        end
+        
+
+        
     end    
     
     
