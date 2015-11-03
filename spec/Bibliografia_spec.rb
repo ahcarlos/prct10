@@ -43,8 +43,42 @@ describe Bibliografia do
             expect(l1.GetReferencia).to eq(243424)
         end
         
-    end    
+    end   
     
+    context "# Almacenamiento de las variables del libro 2" do
+        it "Se almacena el titulo" do
+            expect(l2.GetTitulo).to eq("Pideme lo que quieras y te lo dare")
+        end
+        
+        it "Se almacena el autor" do
+            expect(l2.GetAutor).to eq("Megan Maxwell")
+        end
+        
+        it "Se almacena la editorial" do
+            expect(l2.GetEditorial).to eq("Planeta")
+        end
+        
+        it "Se almacena el numero de edicion" do
+            expect(l2.GetNum_edicion).to eq(4882)
+        end
+        
+        it "Se almacena la serie" do
+            expect(l2.GetSerie).to eq(2910019226453)
+        end
+        
+        it "Se almacena la fecha de publicación" do
+            expect(l2.GetFecha_publicacion).to eq(2015)
+        end
+        
+        it "Se almacena el ISBN" do
+            expect(l2.GetIsbn).to eq(222)
+        end
+        
+        it "Se almacena la referencia" do
+            expect(l2.GetReferencia).to eq(222)
+        end
+        
+    end   
     
 end
 
