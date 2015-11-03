@@ -35,7 +35,10 @@ describe Bibliografia do
             expect(l1.GetFecha_publicacion).to eq(2015)
         end
         
-
+        it "Se almacena el ISBN" do
+            expect(l1.GetIsbn).to eq(23231)
+        end
+        
         
     end    
     
