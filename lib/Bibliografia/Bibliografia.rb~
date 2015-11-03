@@ -87,9 +87,14 @@ module Bibliografia
    	  end
  	  
 	  def PrintReference()
-	    @salida =  GetAutor() + "\n" + GetTitulo() + "\n" + "Editorial: " + GetEditorial() + "\n" + "Fecha de publicación: " + "{@fecha_publicacion}" + "\n" + "ISBN: " + "#{@isbn}" + "\n" +"Referencia: " + "#{@referencia}" + "\n"
-	    @salida
+	    salida =  GetAutor() + "\n" + GetTitulo() + "\n" + "Editorial: " + GetEditorial() + "\n" + "Fecha de publicación: " + "{@fecha_publicacion}" + "\n" + "ISBN: " + "#{@isbn}" + "\n" +"Referencia: " + "#{@referencia}" + "\n"
+	    print salida
 	  end	
 	end
 end
+    autores= ['Gabriel Garcia Marquez', 'Megan Maxwell', 'Julio Verne', 'William Shakespeare']
+    editoriales= ['Random House', 'Planeta']
+        isbn = [23231, 2910019226453, 33849394]
+    prueba = Bibliografia::Bibliografia.new("Pideme lo que quieras y te lo dare", autores[1], editoriales[1], 4882, 222, 2015, isbn[1], 222)
+    prueba.PrintReference()
 	
