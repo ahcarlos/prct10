@@ -39,6 +39,9 @@ describe Bibliografia do
             expect(l1.GetIsbn).to eq(23231)
         end
         
+        it "Se almacena la referencia" do
+            expect(l1.GetReferencia).to eq(243424)
+        end
         
     end    
     
