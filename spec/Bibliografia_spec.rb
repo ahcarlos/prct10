@@ -5,10 +5,11 @@ describe Bibliografia do
     
     #Inicializacion de los autores y editoriales
     autores= ['Gabriel Garcia Marquez', 'Megan Maxwell', 'Julio Verne', 'William Shakespeare']
+    isbn = [23231, 2910019226453, 33849394]
     editoriales= ['Random House', 'Planeta']
     
-    l1= Bibliografia::Bibliografia.new("De viaje por Europa del Este", autores[0], editoriales[0], 2292, 23232, 2015, 23231, 243424)
-    l2= Bibliografia::Bibliografia.new("Pideme lo que quieras y te lo dare", autores[1], editoriales[1], 4882, 2910019226453, 2015, 222, 222)
+    l1= Bibliografia::Bibliografia.new("De viaje por Europa del Este", autores[0], editoriales[0], 2292, 23232, 2015, isbn[0], 243424)
+    l2= Bibliografia::Bibliografia.new("Pideme lo que quieras y te lo dare", autores[1], editoriales[1], 4882, 222, 2015, isbn[1], 222)
     
     context "# Almacenamiento de las variables del libro 1" do
         it "Se almacena el titulo" do
@@ -63,7 +64,7 @@ describe Bibliografia do
         end
         
         it "Se almacena la serie" do
-            expect(l2.GetSerie).to eq(2910019226453)
+            expect(l2.GetSerie).to eq(222)
         end
         
         it "Se almacena la fecha de publicación" do
@@ -71,14 +72,33 @@ describe Bibliografia do
         end
         
         it "Se almacena el ISBN" do
-            expect(l2.GetIsbn).to eq(222)
+            expect(l2.GetIsbn).to eq(2910019226453)
         end
         
         it "Se almacena la referencia" do
             expect(l2.GetReferencia).to eq(222)
         end
-        
     end   
-    
+
+    context "# Probando función referencia formateada" do
+	it "Referencia formateada del libro 1" do
+		expect(l1.PrintReference).to eq("Gabriel Garcia Marquez
+De viaje por Europa del Este
+Editorial: Random House
+Fecha de publicación: {@fecha_publicacion}
+ISBN: 23231
+Referencia: 243424
+")
+	end
+	it "Referencia formateada del libro 2" do
+		expect(l2.PrintReference).to eq("Megan Maxwell
+Pideme lo que quieras y te lo dare
+Editorial: Planeta
+Fecha de publicación: {@fecha_publicacion}
+ISBN: 2910019226453
+Referencia: 222
+")
+	end
+    end 
 end
 
