@@ -15,6 +15,10 @@ describe Bibliografia do
             expect(l1.GetTitulo).to eq("De viaje por Europa del Este")
         end
         
+        it "Se almacena el autor" do
+            expect(l1.GetAutor).to eq("Gabriel Garcia Marquez")
+        end
+        
 
             
     end    
