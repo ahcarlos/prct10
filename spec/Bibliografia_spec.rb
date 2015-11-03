@@ -19,7 +19,10 @@ describe Bibliografia do
             expect(l1.GetAutor).to eq("Gabriel Garcia Marquez")
         end
         
-
+        it "Se almacena la editorial" do
+            expect(l1.GetEditorial).to eq("Random House")
+        end
+        
             
     end    
     
