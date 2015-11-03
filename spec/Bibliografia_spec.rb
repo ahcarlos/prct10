@@ -27,6 +27,9 @@ describe Bibliografia do
             expect(l1.GetNum_edicion).to eq(2292)
         end
         
+        it "Se almacena la serie" do
+            expect(l1.GetSerie).to eq(23232)
+        end
             
     end    
     
