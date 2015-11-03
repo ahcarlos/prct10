@@ -23,6 +23,10 @@ describe Bibliografia do
             expect(l1.GetEditorial).to eq("Random House")
         end
         
+        it "Se almacena el numero de edicion" do
+            expect(l1.GetNum_edicion).to eq(2292)
+        end
+        
             
     end    
     
