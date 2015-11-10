@@ -21,12 +21,11 @@ describe Bibliografia do
         
         it "Existe un nodo con sus datos y su siguiente" do
     
+    
             expect(nodo2.value).to eq(l2)
             expect(nodo2.next).to eq(nil)
     
         end
-        
-    
     end
     
 =begin
