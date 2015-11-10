@@ -6,14 +6,14 @@ require 'Bibliografia/version'
 Gem::Specification.new do |spec|
   spec.name          = "Bibliografia"
   spec.version       = Bibliografia::VERSION
-  spec.authors       = ["Juan Ignacio Hita Manso y Carlos de Armas Hernández"]
-  spec.email         = ["alu0100713213@ull.edu.es"]
+  spec.authors       = [" Carlos de Armas Hernández"]
+  spec.email         = ["alu0100816167@ull.edu.es"]
 
   if spec.respond_to?(:metadata)
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
   end
 
-  spec.summary       = %q{Practica 6 - Bibliografia}
+  spec.summary       = %q{Practica 7 - List}
   spec.description   = %q{Lenguajes y paradigmas de la programación}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
