@@ -14,6 +14,7 @@ module List
             @inicio= node
         end
         
+        
         def extract_beg()
             
             if (@inicio != nil)
@@ -24,6 +25,7 @@ module List
                 return nil
             end
         end
+        
         
         def insert_single(nodo) #inicio
             if(@inicio == nil)
