@@ -93,26 +93,6 @@ describe Bibliografia do
                expect(list2.empty()).to eq(true)
                
           end
-          
-          
-=begin  
-          end
-          
-          
-          
-          
-          
-          
-          
-          
-          it "Se pueden insertar varios elementos" do
-            
-            list.insert_multiple(conj_nodos)
-            expect(list.inicio).to eq(conj_nodos[3])
-            
-          end
-            
-=end       
             
     end
 
