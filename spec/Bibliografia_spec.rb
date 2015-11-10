@@ -29,35 +29,25 @@ describe Bibliografia do
         end
     end
     
-=begin
+
     describe List do
     
-          nodo1 = List::Node.new(2, nil)
-          nodo2= List::Node.new(4, nil)
+          nodo1 = Node.new(l1, l2)
+          nodo2= Node.new(4, nil)
           list= List::List.new(nodo1)
-          conj_nodos= []
-          a= 2
-          
-          for i in 0..3 do
-            conj_nodos[i]= List::Node.new(a, nil)
-            a += 2
-          end
-          
-          
-          
-          it "Existe un nodo con sus datos y su siguiente" do
-            
-            expect(nodo1.value).to eq(2)
-            expect(nodo1.next).to eq(nil)
-            
-          end
-          
-          
+         
+         
           it "Existe una lsita con su cabeza" do
             
             expect(list.inicio).to eq(nodo1)
             
           end
+          
+=begin  
+          end
+          
+          
+          
           
           it "Se extrae el primer elemento de la lista" do
             
@@ -80,10 +70,10 @@ describe Bibliografia do
             
           end
             
-            
+=end       
             
     end
-=end
+
 end
 
 
