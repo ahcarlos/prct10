@@ -41,7 +41,8 @@ describe Bibliografia do
           
           list= List::List.new(nodo1)
           conj_nodos=[nodo1, nodo2, nodo3, nodo4]
-         
+          
+          list2= List::List.new(nil)
          
           it "Existe una lsita con su cabeza" do
             
@@ -85,6 +86,13 @@ describe Bibliografia do
                 expect(list.empty()).to eq(false)
                 
            end
+           
+           
+           
+           it "La lista está vacía" do
+               expect(list2.empty()).to eq(true)
+               
+          end
           
           
 =begin  
