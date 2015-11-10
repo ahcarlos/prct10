@@ -6,9 +6,6 @@
 
 module List
     
-  
-    
-
     class List
 
         attr_reader :inicio
