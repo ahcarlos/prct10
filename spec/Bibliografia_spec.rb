@@ -44,6 +44,15 @@ describe Bibliografia do
           end
           
           
+          it "Se puede insertar un elemento en la lista" do
+            
+            list.insert_single(nodo2)
+            
+            expect(list.inicio).to eq(nodo2)
+            
+          end
+          
+          
           
 =begin  
           end
