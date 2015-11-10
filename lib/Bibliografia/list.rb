@@ -35,6 +35,7 @@ module List
             end
         end
         
+        
         def insert_multiple(nodos)
             nodos.each do |element|
                 insert_single(element)
