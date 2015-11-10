@@ -80,6 +80,11 @@ describe Bibliografia do
           
           
           
+          it "La lista no está vacia" do
+                expect(list.empty()).to eq(false)
+           end
+          
+          
 =begin  
           end
           
