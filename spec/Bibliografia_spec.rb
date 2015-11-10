@@ -33,7 +33,7 @@ describe Bibliografia do
     describe List do
     
           nodo1 = Node.new(l1, l2)
-          nodo2= Node.new(4, nil)
+          nodo2= Node.new(l2, nil)
           list= List::List.new(nodo1)
          
          
@@ -50,6 +50,15 @@ describe Bibliografia do
             
             list.insert_single(nodo2)
             expect(list.inicio).to eq(nodo2)
+            
+          end
+          
+          
+          
+           
+          it "Se extrae el primer elemento de la lista" do
+            
+            expect(list.extract_beg()).to eq(nodo2)
             
           end
           
