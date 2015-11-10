@@ -15,6 +15,7 @@ describe Bibliografia do
     
     
     describe Node do
+        
         nodo1= Node.new(l1, l2)
         nodo2= Node.new(l2, nil)
         
