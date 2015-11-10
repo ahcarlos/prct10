@@ -10,6 +10,7 @@ module List
 
         attr_reader :inicio
         def initialize(node)
+            
             @inicio= node
         end
         
