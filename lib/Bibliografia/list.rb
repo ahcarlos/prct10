@@ -27,6 +27,7 @@ module List
         end
         
         
+        
         def insert_single(nodo) #inicio
             if(@inicio == nil)
                 @inicio= nodo
@@ -38,6 +39,8 @@ module List
         end
         
         
+        
+        
         def insert_multiple(nodos)
             nodos.each do |element|
                 insert_single(element)
@@ -46,7 +49,10 @@ module List
         
         
         
+        
+        
         def empty()
+            
             if(@inicio == nil)
                 return true
             else
