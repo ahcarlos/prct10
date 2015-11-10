@@ -42,6 +42,8 @@ module List
             end
         end
         
+        
+        
         def empty()
             if(@inicio == nil)
                 return true
