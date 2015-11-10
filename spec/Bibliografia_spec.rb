@@ -32,6 +32,7 @@ describe Bibliografia do
 
     describe List do
     
+    
           nodo1 = Node.new(l1, l2)
           nodo2= Node.new(l2, nil)
           list= List::List.new(nodo1)
