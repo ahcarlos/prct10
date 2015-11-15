@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
     spec.metadata['allowed_push_host'] = "TODO: Set to 'http://mygemserver.com' to prevent pushes to rubygems.org, or delete to allow pushes to any server."
   end
 
-  spec.summary       = %q{Practica 7 - List}
+  spec.summary       = %q{Practica 8 - List}
   spec.description   = %q{Lenguajes y paradigmas de la programación}
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "MIT"
@@ -26,4 +26,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.8"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 2.11"
+  spec.add_development_dependency "guard"
+  spec.add_development_dependency "guard-rspec"
+  spec.add_development_dependency "guard-bundler"
+
+
 end
