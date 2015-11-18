@@ -90,7 +90,7 @@ describe Bibliografia do
                 end
                 
             end
-=begin          
+        
             context "Revistas" do
                 revista1 = Bibliografia::Revista.new("Redes neuronales","Richard E. Silverman", 2015,"ISSN-10: 122449325866", "Nature")
                 
@@ -110,7 +110,7 @@ describe Bibliografia do
                 end
                 
             end
-            
+=begin
             context "Ebooks" do
                 ebook1= Bibliografia::Ebook.new("El tiempo entre costuras", "Maria Dueñas", 2012, "www.librosparatodos.com", "PDF")
                 
@@ -130,9 +130,10 @@ describe Bibliografia do
             end
             
         end
+=end
 
     end
-=end
+
 
 
 end
