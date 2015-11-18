@@ -70,7 +70,7 @@ describe Bibliografia do
             expect(list.fin).to eq(conj_nodos[2])
             
         end
-        
+=begin
         describe Bibliografia do
             
             context "Libros" do
@@ -132,54 +132,7 @@ describe Bibliografia do
         end
         
     end
-    
-=begin
-    describe List do
-     
-      
-      it "Existe una lista doblemente enlazada con su cabeza" do
-            
-            expect(list.inicio).to eq(nodo1)
-            
-      end
-
-      it "Se inserta un elemento al final" do
-        list.insert_single_end(nodo2)
-        expect(list.fin).to eq(nodo2)
-      end
-
-    
-      it "Se extrae un elemento al final" do
-          expect(list.extract_end()).to eq(nodo2)
-      end
-
-      it "Se inserta un elemento al principio" do
-          list.insert_single_beg(nodo3)
-          expect(list.inicio).to eq(nodo3)
-      end
-      
-      it "Se extrae un elemento al principio" do
-          expect(list.extract_beg()).to eq(nodo3)
-      end
-      
-       it "Se pueden insertar varios elementos al principio" do
-            
-            list.insert_multiple_beg(conj_nodos)
-            expect(list.inicio).to eq(conj_nodos[3])
-            
-        end
-        
-        it "Se pueden insertar varios elementos al final" do
-            
-            list.insert_multiple_end(conj_nodos)
-            expect(list.fin).to eq(conj_nodos[3])
-            
-        end
-        
-        
-    end
 =end
-
 
 end
 
