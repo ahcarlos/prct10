@@ -1,95 +1,60 @@
 module Bibliografia
 	class Bibliografia
-	  attr_reader :titulo, :autor, :editorial, :num_edicion,
-	              :serie, :fecha_publicacion, :isbn,
-	              :referencia
-
-	  def initialize(t, a, e, n, s, f, i, r)
-	    @titulo = t
-			@autor = a
-	    @editorial = e
-	    @num_edicion = n
-	    @serie = s
-	    @fecha_publicacion = f
-	    @isbn = i
-	    @referencia = r
-	  end
-	def GetAutor()
-		@autor
-	end
-
-	def SetAutor(valor)
-		@autor = valor
-	end
+		  attr_accessor :titulo, :autor, :fecha_publicacion 
+	
+		#bibliografia general: titulo, autor, fecha publicacion
+		#libro-> incluye el isbn, editorial, numero_edicion
+		#revista-> incluye issn
+		#ebook-> incluye URL, formato
+	
+		  def initialize(titulo, autor, fecha_publicacion) 
+		    @titulo= titulo
+		    @autor= autor
+		    @fecha_publicacion= fecha_publicacion
+		  end
+	
 		
-	  def SetTitulo(valor)
-	    @titulo = valor
-	  end
-
-	  def GetTitulo()
-	    @titulo
-	  end
-
-	  def SetEditorial(valor)
-	    @editorial = valor
-	  end
-
-	  def GetEditorial()
-	    @editorial
-	  end
-
-	  def SetEditorial(valor)
-	    @editorial = valor
-	  end
-
-	  def GetNum_edicion()
-	    @num_edicion
-	  end
-
-	  def SetNum_edicion(valor)
-	    @num_edicion = valor
-	  end
-
-	  def GetSerie()
-	    @serie
-	  end
-
-	  def SetSerie(valor)
-	    @serie = valor
-	  end
-
-	  def GetFecha_publicacion()
-	    @fecha_publicacion
-	  end
-
-	  def SetFecha_publicacion(valor)
-	    @fecha_publicacion = valor
-	  end
-
-	  def GetIsbn()
-	    @isbn
-	  end
-
-	  def SetIsbn(valor)
-	    @isbn = isbn
-	  end
-
-	  def GetReferencia()
-	    @referencia
-	  end
-
-	  def SetReferencia(valor)
-	    @referencia = valor
-	  end
-	  
-	  def to_s(valor)
-	    "(#{@valor})"
-   	  end
- 	  
-	  def PrintReference()
-	    @salida =  GetAutor() + "\n" + GetTitulo() + "\n" + "Editorial: " + GetEditorial() + "\n" + "Fecha de publicación: " + "{@fecha_publicacion}" + "\n" + "ISBN: " + "#{@isbn}" + "\n" +"Referencia: " + "#{@referencia}" + "\n"
-	    @salida
-	  end	
+	 	  
+		  def PrintReference()
+		    @salida =  GetAutor() + "\n" + GetTitulo() + "\n" + "Editorial: " + GetEditorial() + "\n" + "Fecha de publicación: " + "{@fecha_publicacion}" + "\n" + "ISBN: " + "#{@isbn}" + "\n" +"Referencia: " + "#{@referencia}" + "\n"
+		    @salida
+		  end
+		  
+	end
+	
+	class Libro < Bibliografia
+		attr_accessor :isbn, :editorial, :num_edicion
+		def initialize(titulo, autor, fecha_publicacion, isbn, editorial, num_edicion)
+			@titulo= titulo
+		    @autor= autor
+		    @fecha_publicacion= fecha_publicacion
+			@isbn= isbn
+			@editorial= editorial
+			@num_edicion= num_edicion
+		end
+	end
+	
+	class Revista < Bibliografia
+		attr_accessor :issn,  :nombre_revista
+		def initialize(titulo, autor, fecha_publicacion, issn, nombre_revista)
+			@titulo= titulo
+		    @autor= autor
+		    @fecha_publicacion= fecha_publicacion
+			@issn= issn
+			@nombre_revista= nombre_revista
+		end
+		
+	end
+	
+	class Ebook < Bibliografia
+		attr_accessor :url, :formato
+		def initialize(titulo, autor, fecha_publicacion, url, formato)
+			@titulo= titulo
+		    @autor= autor
+		    @fecha_publicacion= fecha_publicacion
+			@url= url
+			@formato= formato
+		end
 	end
 end
 	
