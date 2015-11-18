@@ -70,7 +70,7 @@ describe Bibliografia do
             expect(list.fin).to eq(conj_nodos[2])
             
         end
-=begin
+
         describe Bibliografia do
             
             context "Libros" do
@@ -90,7 +90,7 @@ describe Bibliografia do
                 end
                 
             end
-            
+=begin          
             context "Revistas" do
                 revista1 = Bibliografia::Revista.new("Redes neuronales","Richard E. Silverman", 2015,"ISSN-10: 122449325866", "Nature")
                 
@@ -130,9 +130,10 @@ describe Bibliografia do
             end
             
         end
-        
+
     end
 =end
+
 
 end
 
