@@ -110,7 +110,7 @@ describe Bibliografia do
                 end
                 
             end
-=begin
+
             context "Ebooks" do
                 ebook1= Bibliografia::Ebook.new("El tiempo entre costuras", "Maria Dueñas", 2012, "www.librosparatodos.com", "PDF")
                 
@@ -130,7 +130,7 @@ describe Bibliografia do
             end
             
         end
-=end
+
 
     end
 
