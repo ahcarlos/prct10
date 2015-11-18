@@ -41,7 +41,7 @@ module List
             end
         end
         
-        def insert_single_end(nodo)
+        def insert_single_end(nodo) #Insertar al final
             if(@end != nil)
               aux= @fin.next
               @fin= nodo
@@ -54,7 +54,10 @@ module List
                 
         end
         
-        def extract_end()
+        
+        
+        
+        def extract_end() #Extraer al final
             if(@fin != nil)
                 aux= @fin
                 @fin= @fin.prev
@@ -68,13 +71,13 @@ module List
         
         
         
-        def insert_multiple_beg(nodos)
+        def insert_multiple_beg(nodos) #insertar multiple al principio
             nodos.each do |element|
                 insert_single_beg(element)
             end
         end
         
-        def insert_multiple_end(nodos)
+        def insert_multiple_end(nodos) #Insertar multiple al final
             nodos.each do |element|
                 insert_single_end(element)
             end
@@ -83,7 +86,7 @@ module List
         
         
         
-        def empty()
+        def empty() #Comprueba si la lista esta vacia
             
             if(@inicio == nil)
                 return true
