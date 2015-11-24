@@ -19,9 +19,9 @@ module Bibliografia
 			#return nil unless other.kind_of? Bibliografia::Bibliografia
 			@titulo == other.titulo
 		end
-	 	  
-		  
 	end
+	
+	
 	
 	class Libro < Bibliografia
 		attr_accessor :isbn, :editorial, :num_edicion
