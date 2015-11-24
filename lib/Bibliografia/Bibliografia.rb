@@ -20,10 +20,6 @@ module Bibliografia
 			@titulo == other.titulo
 		end
 	 	  
-		  def PrintReference()
-		    @salida =  GetAutor() + "\n" + GetTitulo() + "\n" + "Editorial: " + GetEditorial() + "\n" + "Fecha de publicación: " + "{@fecha_publicacion}" + "\n" + "ISBN: " + "#{@isbn}" + "\n" +"Referencia: " + "#{@referencia}" + "\n"
-		    @salida
-		  end
 		  
 	end
 	
