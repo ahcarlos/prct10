@@ -8,11 +8,14 @@ module List
     
     class List
 
+       include Enumerable
+        
         attr_accessor :inicio, :fin
-        def initialize(node)
+       
+        def initialize()
             
-            @inicio= node
-            @fin= node
+            @inicio= nil
+            @fin = nil
         end
         
         
@@ -29,31 +32,61 @@ module List
         
         
         
-        def insert_single_beg(nodo) #inicio
-            if(@inicio == nil)
-                @inicio= nodo
-                @fin= nodo
-            else
-                aux= @inicio.next
-                @inicio= nodo
-                @inicio.next= aux
-                @inicio.prev= aux
-            end
-        end
+       
         
-        def insert_single_end(nodo) #Insertar al final
-            if(@end != nil)
-              aux= @fin.next
-              @fin= nodo
-              @fin.prev= aux
-              @fin.next= nil
+        def insert_single_beg(valor)
+            
+            nodo = Node.new(nil, valor, nil)
+            
+            if (@inicio == nil)
+                @inicio = nodo
+                @fin = nodo
             else
-                @inicio= nodo
-                @fin= nodo
-            end
+                aux = @inicio
+                @inicio = nodo
+                @inicio.next = aux
+                aux.prev = @inicio
                 
+            end
         end
         
+       
+        
+   
+        
+        def insert_end(valor)
+            
+            nodo = Node.new(nil, valor,nil)
+            if(@fin == nil)
+                @fin = nodo
+                @inicio = nodo
+            else
+                aux = @fin
+                @fin = nodo
+                @fin.prev = aux
+                aux.next = @fin
+            end  
+        end
+        
+        
+    def each
+        aux = @inicio
+        if (@inicio == nil and @fin == nil)
+                
+                yield nil
+                
+            elsif (@inicio == @fin)
+                
+                yield @inicio.value
+                
+            else
+                while(aux != nil)
+                    yield aux.value  
+                    aux = aux.next 
+                end
+        end
+    end 
+       
         
         
         
