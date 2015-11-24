@@ -2,10 +2,7 @@ module Bibliografia
 	class Bibliografia
 		  attr_accessor :titulo, :autor, :fecha_publicacion 
 	
-		#bibliografia general: titulo, autor, fecha publicacion
-		#libro-> incluye el isbn, editorial, numero_edicion
-		#revista-> incluye issn
-		#ebook-> incluye URL, formato
+		include Comparable
 	
 		  def initialize(titulo, autor, fecha_publicacion) 
 		    @titulo= titulo
@@ -13,7 +10,15 @@ module Bibliografia
 		    @fecha_publicacion= fecha_publicacion
 		  end
 	
+		def <=>(other)
+			#return nil unless other.kind_of? Bibliografia::Bibliografia
+			@titulo <=> other.titulo
+		end
 		
+		def ==(other)
+			#return nil unless other.kind_of? Bibliografia::Bibliografia
+			@titulo == other.titulo
+		end
 	 	  
 		  def PrintReference()
 		    @salida =  GetAutor() + "\n" + GetTitulo() + "\n" + "Editorial: " + GetEditorial() + "\n" + "Fecha de publicación: " + "{@fecha_publicacion}" + "\n" + "ISBN: " + "#{@isbn}" + "\n" +"Referencia: " + "#{@referencia}" + "\n"

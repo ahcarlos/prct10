@@ -52,6 +52,27 @@ describe List do
         
     end
     
+describe Bibliografia do
+            
+        context "#Pruebas include comparable" do
+            
+            before :all do
+                @libro1= Bibliografia::Libro.new("Git Pocket Guide O’Reilly Media","David Chelimsky", 2013, 1449325866, "edition", 1)
+                @libro2= Bibliografia::Libro.new("Viaje Alrededor del Mundo","Samuel Ramos", 2010, 1449325555866, "Mi editorial", 3)
+                @libro3= Bibliografia::Libro.new("Una historia de miedo","Alberto Barrera", 2015, 1449325555866, "Mi editorial", 3)
+            end
+            
+            it "El libro1 (G) es menor estricto que el libro 2 (V) " do
+                 expect(@libro1 < @libro2).to eq(true)
+            end
+            
+            it "El libro1 (G) es menor o igual al  libro 2 (V) " do
+                 expect(@libro1 <= @libro2).to eq(true)
+            end
+            
+        end
+end
+    
 
 
 
