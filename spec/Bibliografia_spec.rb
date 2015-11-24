@@ -22,6 +22,7 @@ describe List do
             @list1.insert_single_beg(@libro4)
         end
         
+        
          it "#Comprobrando max. El máximo es Serie Revolución porque es la letra más cercana a la Z" do
          expect(@list1.max).to eq(@libro3)
         end
@@ -57,7 +58,7 @@ describe List do
 
         
     end
-    
+        
 describe Bibliografia do
             
         context "#Pruebas include comparable" do
