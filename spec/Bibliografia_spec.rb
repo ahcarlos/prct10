@@ -57,7 +57,7 @@ describe Bibliografia do
         context "#Pruebas include comparable" do
             
             before :all do
-                @libro1= Bibliografia::Libro.new("Git Pocket Guide O’Reilly Media","David Chelimsky", 2013, 1449325866, "edition", 1)
+                @libro1= Bibliografia::Libro.new("Git Pocket Guide O'Reilly Media","David Chelimsky", 2013, 1449325866, "edition", 1)
                 @libro2= Bibliografia::Libro.new("Viaje Alrededor del Mundo","Samuel Ramos", 2010, 1449325555866, "Mi editorial", 3)
                 @libro3= Bibliografia::Libro.new("Una historia de miedo","Alberto Barrera", 2015, 1449325555866, "Mi editorial", 3)
             end
