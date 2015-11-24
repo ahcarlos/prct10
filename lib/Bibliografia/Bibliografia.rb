@@ -10,6 +10,7 @@ module Bibliografia
 		    @fecha_publicacion= fecha_publicacion
 		  end
 	
+		
 		def <=>(other)
 			#return nil unless other.kind_of? Bibliografia::Bibliografia
 			@titulo <=> other.titulo
