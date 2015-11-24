@@ -8,8 +8,8 @@ module List
     
     class List
 
-       include Enumerable
-        
+      
+         include Enumerable
         attr_accessor :inicio, :fin
        
         def initialize()
