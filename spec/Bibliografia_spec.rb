@@ -23,7 +23,7 @@ describe List do
         end
         
         
-         it "#Comprobrando max. El maximo es Serie Revolucion porque es la letra más cercana a la Z" do
+         it "#Comprobrando max. El   maximo es Serie Revolucion porque es la letra mas cercana a la Z" do
          expect(@list1.max).to eq(@libro3)
         end
         
