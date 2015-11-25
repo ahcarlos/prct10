@@ -10,7 +10,7 @@ describe List do
        before :all do
             @libro1= Bibliografia::Libro.new("Los pilares de la Tierra","Ken Folletdd", 2013, 1449325866, "edition", 6)
             @libro2= Bibliografia::Libro.new("Dama del Nilo","Pauline Gedge", 2010, 1449325555866, "Mi editorial", 3) 
-            @libro3= Bibliografia::Libro.new("Serie Revolución","Simon Scarrow", 2000, 14866, "edition1", 1)
+            @libro3= Bibliografia::Libro.new("Serie Revolucion","Simon Scarrow", 2000, 14866, "edition1", 1)
             @libro4= Bibliografia::Libro.new("Ramos y su perrito del patio","Simon Scarrow", 2000, 1499899866, "edition1", 166)
             
             @list1 = List::List.new()
