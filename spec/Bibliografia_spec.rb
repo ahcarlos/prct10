@@ -23,11 +23,11 @@ describe List do
         end
         
         
-         it "#Comprobrando max. El máximo es Serie Revolución porque es la letra más cercana a la Z" do
+         it "#Comprobrando max. El maximo es Serie Revolucion porque es la letra más cercana a la Z" do
          expect(@list1.max).to eq(@libro3)
         end
         
-        it "# Comprobrando min. El mínimo es Dama del Nilo porque es la letra más cercana a la A" do
+        it "# Comprobrando min. El minimo es Dama del Nilo porque es la letra mas cercana a la A" do
          expect(@list1.min).to eq(@libro2)
         end
         
@@ -69,7 +69,7 @@ describe Bibliografia do
                 @libro3= Bibliografia::Libro.new("Una historia de miedo","Alberto Barrera", 2015, 1449325555866, "Mi editorial", 3)
                 @libro4= Bibliografia::Libro.new("Viaje Alrededor del Mundo","Samuel Ramos", 2010, 1449325555866, "Mi editorial", 3)
                 @libro5= Bibliografia::Libro.new("Dama del Nilo","Pauline Gedge", 2010, 1449325555866, "Mi editorial", 3) 
-                @libro6= Bibliografia::Libro.new("Serie Revolución","Simon Scarrow", 2000, 14866, "edition1", 1)
+                @libro6= Bibliografia::Libro.new("Serie Revolucion","Simon Scarrow", 2000, 14866, "edition1", 1)
             end
             
             it "# El libro1 (G) es menor (<) estricto que el libro 2 (V) " do
