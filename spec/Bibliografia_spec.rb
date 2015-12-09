@@ -1,3 +1,6 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+
 require 'spec_helper'
 require 'Bibliografia'
 require 'Bibliografia/list'
